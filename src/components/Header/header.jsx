@@ -17,6 +17,8 @@ const Header = ({type}) => {
     }
   ]);
 
+
+
   const [openDate,setOpenDate] = useState(false)
 
   const [openOptions,setOpenOptions]= useState(false)
@@ -41,7 +43,7 @@ const Header = ({type}) => {
   const navigate=useNavigate();
 
   const handleSearch=()=>{
-      navigate("/hotels",{state:{destination,date,options}})
+      navigate("/hotels",{state:{ destination,date,options }})
   }
 
   return (
